@@ -172,13 +172,13 @@ function cards() {
         }
     }
 
-    (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)('http://localhost:3004/menu')
+    (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)('http://localhost:3000/menu')
         .then(data =>
             data.forEach(({ img, altimg, title, descr, price }) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container',).renderCard();
             }));
 
-    // axios.get('http://localhost:3004/menu')
+    // axios.get('http://localhost:3000/menu')
     //     .then(data =>
     //         data.data.forEach(({ img, altimg, title, descr, price }) => {
     //             new MenuCard(img, altimg, title, descr, price, '.menu .container',).renderCard();
@@ -239,7 +239,7 @@ function formData(formSelector, modalTimerId) {
                 object[key] = value;
             });
 
-            (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)('http://localhost:3004/requests', JSON.stringify(object))
+            (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)('http://localhost:3000/requests', JSON.stringify(object))
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);
@@ -753,7 +753,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inner: '.offer__slider-inner',
     });
 
-    console.log('works 111');
+    console.log('works 121');
 });
 })();
 

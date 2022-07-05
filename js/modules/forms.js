@@ -36,7 +36,7 @@ function formData(formSelector, modalTimerId) {
                 object[key] = value;
             });
 
-            postData('http://localhost:3004/requests', JSON.stringify(object))
+            postData('http://localhost:3000/requests', JSON.stringify(object))
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);

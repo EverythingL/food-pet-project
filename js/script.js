@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
         inner: '.offer__slider-inner',
     });
 
-    console.log('works 111');
+    console.log('works 121');
 });

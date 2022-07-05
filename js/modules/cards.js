@@ -41,13 +41,13 @@ function cards() {
         }
     }
 
-    getResource('http://localhost:3004/menu')
+    getResource('http://localhost:3000/menu')
         .then(data =>
             data.forEach(({ img, altimg, title, descr, price }) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container',).renderCard();
             }));
 
-    // axios.get('http://localhost:3004/menu')
+    // axios.get('http://localhost:3000/menu')
     //     .then(data =>
     //         data.data.forEach(({ img, altimg, title, descr, price }) => {
     //             new MenuCard(img, altimg, title, descr, price, '.menu .container',).renderCard();

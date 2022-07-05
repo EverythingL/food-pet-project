@@ -13,5 +13,9 @@ module.exports = {
 
   devtool: "source-map",
 
-  module: {}
+  module: {
+    rules: [
+      {}
+    ]
+  }
 };
